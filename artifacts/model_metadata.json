@@ -1,0 +1,123 @@
+{
+  "dataset_rows": 2200,
+  "feature_columns": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "target_column": "label",
+  "crop_labels": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "number_of_crops": 22,
+  "feature_medians": {
+    "N": 37.0,
+    "P": 51.0,
+    "K": 32.0,
+    "temperature": 25.5986932,
+    "humidity": 80.473145665,
+    "ph": 6.42504527,
+    "rainfall": 94.86762427
+  },
+  "feature_ranges": {
+    "N": {
+      "min": 0.0,
+      "max": 140.0,
+      "mean": 50.551818181818184,
+      "median": 37.0
+    },
+    "P": {
+      "min": 5.0,
+      "max": 145.0,
+      "mean": 53.36272727272727,
+      "median": 51.0
+    },
+    "K": {
+      "min": 5.0,
+      "max": 205.0,
+      "mean": 48.14909090909091,
+      "median": 32.0
+    },
+    "temperature": {
+      "min": 8.825674745,
+      "max": 43.67549305,
+      "mean": 25.616243851779544,
+      "median": 25.5986932
+    },
+    "humidity": {
+      "min": 14.25803981,
+      "max": 99.98187601,
+      "mean": 71.48177921778637,
+      "median": 80.473145665
+    },
+    "ph": {
+      "min": 3.504752314,
+      "max": 9.93509073,
+      "mean": 6.469480065256364,
+      "median": 6.42504527
+    },
+    "rainfall": {
+      "min": 20.21126747,
+      "max": 298.5601175,
+      "mean": 103.46365541576817,
+      "median": 94.86762427
+    }
+  },
+  "deployed_model": "Random Forest",
+  "basic_mode_note": "Basic Mode uses dataset median/default values for N, P, K, and pH.",
+  "train_rows": 1760,
+  "test_rows": 440,
+  "random_state": 42,
+  "test_size": 0.2,
+  "model_comparison": [
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9931818181818182,
+      "precision_macro": 0.9935064935064936,
+      "recall_macro": 0.993181818181818,
+      "f1_macro": 0.9931775541531639,
+      "deployed": true
+    },
+    {
+      "model": "SVM",
+      "accuracy": 0.9886363636363636,
+      "precision_macro": 0.9895710350255804,
+      "recall_macro": 0.9886363636363634,
+      "f1_macro": 0.9886735002267737,
+      "deployed": false
+    },
+    {
+      "model": "GaussianNB",
+      "accuracy": 0.9954545454545455,
+      "precision_macro": 0.9958677685950413,
+      "recall_macro": 0.9954545454545454,
+      "f1_macro": 0.9954431533378901,
+      "deployed": false
+    }
+  ]
+}
