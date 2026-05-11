@@ -1,0 +1,108 @@
+crop_recommendation_rebuild/
+├── .env.example
+├── .gitignore
+├── .streamlit/
+│   └── config.toml
+├── PROJECT_BUILD_NOTES.md
+├── README.md
+├── app.py
+├── artifacts/
+│   ├── confusion_matrices/
+│   │   ├── gaussiannb_confusion_matrix.png
+│   │   ├── random_forest_confusion_matrix.png
+│   │   └── svm_confusion_matrix.png
+│   ├── gaussiannb_classification_report.csv
+│   ├── metrics_summary.csv
+│   ├── model_metadata.json
+│   ├── random_forest_classification_report.csv
+│   ├── rf_feature_importance.csv
+│   ├── svm_classification_report.csv
+│   └── training_summary.json
+├── assets/
+│   ├── crops/
+│   │   ├── Apple.jpg
+│   │   ├── Banana.jpg
+│   │   ├── Blackgram.jpg
+│   │   ├── Chickpea.jpg
+│   │   ├── Coconut.jpg
+│   │   ├── Coffee.jpg
+│   │   ├── Cotton.jpg
+│   │   ├── Grapes.jpg
+│   │   ├── Jute.jpg
+│   │   ├── Kidneybeans.jpg
+│   │   ├── Lentil.jpg
+│   │   ├── Maize.jpg
+│   │   ├── Mango.jpg
+│   │   ├── Mothbeans.jpg
+│   │   ├── Mungbeans.jpg
+│   │   ├── Muskmelon.jpg
+│   │   ├── Orange.jpg
+│   │   ├── Papaya.jpg
+│   │   ├── Pigeonpeas.jpg
+│   │   ├── Pomegranate.jpg
+│   │   ├── Rice.jpg
+│   │   └── Watermelon.jpg
+│   ├── images/
+│   └── styles/
+│       └── main.css
+├── data/
+│   ├── app_data.db
+│   └── raw/
+│       └── Crop_recommendation.csv
+├── models/
+│   ├── gaussiannb_pipeline.joblib
+│   ├── random_forest_pipeline.joblib
+│   └── svm_pipeline.joblib
+├── requirements.txt
+├── run_app.bat
+├── scripts/
+│   ├── create_demo_users.py
+│   └── train_models.py
+└── src/
+    ├── __init__.py
+    ├── auth/
+    │   ├── __init__.py
+    │   ├── auth_service.py
+    │   ├── password_utils.py
+    │   └── recovery_service.py
+    ├── config.py
+    ├── content/
+    │   ├── __init__.py
+    │   ├── assistant_knowledge.py
+    │   ├── crop_info.py
+    │   ├── help_content.py
+    │   └── translations.py
+    ├── database/
+    │   ├── __init__.py
+    │   ├── connection.py
+    │   ├── notifications_repo.py
+    │   ├── predictions_repo.py
+    │   ├── recovery_repo.py
+    │   ├── schema.py
+    │   └── users_repo.py
+    ├── ml/
+    │   ├── __init__.py
+    │   ├── data_utils.py
+    │   ├── model_loader.py
+    │   ├── predict_service.py
+    │   └── train_models.py
+    ├── pages/
+    │   ├── __init__.py
+    │   ├── admin_panel.py
+    │   ├── advanced_recommendation.py
+    │   ├── auth_pages.py
+    │   ├── basic_recommendation.py
+    │   ├── chat_assistant.py
+    │   ├── help_guide.py
+    │   ├── home.py
+    │   ├── model_comparison.py
+    │   ├── notifications.py
+    │   ├── prediction_history.py
+    │   └── profile.py
+    ├── ui/
+    │   ├── __init__.py
+    │   ├── components.py
+    │   └── layout.py
+    └── utils/
+        ├── __init__.py
+        └── formatting.py
